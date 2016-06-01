@@ -1,0 +1,21 @@
+<div class="col-md-4"></div>
+<div class="container-fluid col-md-8">
+  			<form role="form" >
+		    	<div class="form-group">
+		      	<label>Nombre Conductor:<input type="text" class="form-control" ng-model="newUser.name"></label>
+		    	</div>
+		    	<div class="form-group">
+		      	<label>Rut Conductor:<input type="text" class="form-control" ng-model="newUser.rut"></label>
+		    	</div>		
+				<div class="form-group">
+		      	<label>Email:<input type="email" class="form-control" ng-model="newUser.email"></label>
+		    	</div>
+		    	<div class="form-group">
+		      	<label>Patente Ambulancia:<input type="text" class="form-control" ng-model="newUser.patente"></label>
+		    	</div>
+		    	<div class="form-group">
+					<input type="submit" value="Registrarse" class="btn btn-primary" ng-click="addNewUser(newUser)">
+					<a href="#/" class="btn btn-default">Cancelar</a>
+		    	</div>
+			</form>
+</div>

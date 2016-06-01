@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="AngularGoogleMap" >
+	<head>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/angular-aside/dist/css/angular-aside.min.css">
+		<link href="css/style.css" rel="stylesheet"/>
+		<meta charset="utf-8">
+		<title>HelpTrack</title>
+	</head>
+
+	<body>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+			<div class="navbar-header">
+	  			<a class="navbar-brand active" href="#/"><span  id="cruz" class="glyphicon glyphicon-plus"></span>HelpTrack</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right" ng-controller="asideController" ng-class="asideState.position">
+				<li class="pull-right"><a ng-click="openAside('right',true)"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right" ng-controller="loginController">
+	  			<li><a href="#registro"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+	  			<li><a ng-click="openModal('sm')"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+  		</div>
+	</nav>
+	<div ng-view> </div>
+			
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js" ></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzfBhwFxsYaRjmaXWHsaVM03_aXRJ712g" type="text/javascript"></script>
+	<script src="bower_components/angular-aside/dist/js/angular-aside.min.js"></script>
+	<script src="js/lib/lodash.underscore.min.js"></script>
+	<script src="js/lib/angular-google-maps.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/mapController.js"></script>
+	<script src="js/loginController.js"></script>
+	<script src="js/userController.js"></script>
+	<script src="js/asideController.js"></script>
+	<script src="js/cerrarSesionController.js"></script>
+	<script src="js/showController.js"></script>
+	</body>
+</html>
